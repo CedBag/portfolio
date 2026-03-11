@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio de Cedoque Bagbonon – Data Analyst &amp; Consultant IA à Cotonou, Bénin. Spécialisé en SQL, Python, Power BI. Disponible pour emploi ou stage.">
+  <meta name="keywords"
+    content="Data Analyst, Consultant IA, SQL, Python, Power BI, Machine Learning, Tableau de bord, Bénin, Cotonou, Cedoque Bagbonon, cedbag, analyse de données, intelligence artificielle">
+  <meta property="og:title" content="Cedoque Bagbonon | Data Analyst &amp; Consultant IA">
+  <meta property="og:description"
+    content="Je transforme les données brutes en décisions stratégiques — et les idées en systèmes intelligents.">
+  <meta property="og:type" content="website">
+  <title>Portfolio | Cedoque Bagbonon – Data Analyst &amp; Consultant IA</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='14' font-weight='700' text-anchor='middle' fill='white'%3ECB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Barre de progression de lecture -->
+  <div id="reading-progress"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-logo">Ced<span>.</span></div>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#hero">Accueil</a>
+      <a href="#about">Mon Histoire</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#consultation-ia" class="nav-ia-link">Consultation IA</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Basculer le mode sombre/clair">
+        <i class="fas fa-moon" id="theme-icon"></i>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+
+        <div class="hero-text fade-in">
+          <div class="hero-badge">
+            <i class="fas fa-map-marker-alt"></i>
+            Cotonou, Bénin — Open to Remote
+          </div>
+          <div class="hero-available-badge">
+            <span class="available-dot"></span>
+            Disponible immédiatement
+          </div>
+          <h1 class="hero-title">
+            Cedoque<br>
+            <span class="typewriter-wrapper" id="typewriter-text"></span><span class="typewriter-cursor"></span>
+          </h1>
+          <p class="hero-tagline">
+            Je transforme les données brutes en décisions stratégiques —<br>
+            et les idées en <strong>systèmes intelligents</strong> à impact concret.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-chart-bar"></i> Voir mes projets
+            </a>
+            <a href="#consultation-ia" class="btn btn-secondary">
+              <i class="fas fa-handshake"></i> Discutons de votre IA
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrapper fade-in">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-ring-inner"></div>
+          <img src="images/profile.webp" alt="Photo de profil de Cedoque Bagbonon" class="hero-photo">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MON HISTOIRE
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-subtitle">À propos</p>
+      <h2 class="section-title fade-in">
+        L'Architecte qui <span class="accent">déconstruit</span> pour mieux <span
+          class="accent-amber">construire</span>.
+      </h2>
+
+      <div class="about-grid fade-in">
+        <div class="about-sidebar">
+          <img src="images/profile-about.webp" alt="Cedoque Bagbonon" class="about-photo">
+          <div class="personality-badges">
+            <span class="badge blue">INTJ – Architecte</span>
+            <span class="badge amber">Builder</span>
+            <span class="badge">Curieux Systémique</span>
+            <span class="badge blue">Orienté Impact</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="about-intro">
+            "Né avec un tournevis dans la main" — dès 4 ans, je démontais tout pour comprendre la logique interne des
+            choses. Aujourd'hui, je fais pareil avec les données.
+          </p>
+
+          <p
+            style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 0.97rem; line-height: 1.7; text-align: justify;">
+            Analyste de données formé en <strong>Informatique Industrielle &amp; Maintenance</strong> à l'Institut CERCO
+            Bénin, j'ai fait un choix stratégique en me spécialisant dans la data — cette ressource qui, bien exploitée,
+            est le moteur invisible de toute décision intelligente.
+          </p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2024 – 2025</div>
+              <div class="timeline-title">
+                <i class="fas fa-robot timeline-icon"></i> Projets &amp; Projet de Fin de Licence
+              </div>
+              <div class="timeline-desc">OptiBank (BI &amp; ML), Akɔwɛdagbe (Full-Stack + Prédiction) · PFE : Système
+                intelligent de gestion de la consommation énergétique domestique (compteurs SBEE, Bénin). <em>(En
+                  cours)</em></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2022 – 2025</div>
+              <div class="timeline-title">
+                <i class="fas fa-chart-line timeline-icon"></i> Spécialisation Data Analysis
+              </div>
+              <div class="timeline-desc">Certification Google Data Analytics (Coursera, 2025) · Maîtrise de SQL, R,
+                Python, Power BI et visualisation data-driven. Autres certifications Coursera &amp; OpenClassrooms
+                (2023-2025).</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">Oct. 2022 – Juil. 2025</div>
+              <div class="timeline-title">
+                <i class="fas fa-microchip timeline-icon"></i> Licence — Informatique Industrielle &amp; Maintenance
+              </div>
+              <div class="timeline-desc">Institut CERCO Bénin · Compréhension des systèmes complexes et développement
+                d'une vision architecturale des solutions. <em>(En attente de soutenance)</em></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">Juin 2020</div>
+              <div class="timeline-title">
+                <i class="fas fa-graduation-cap timeline-icon"></i> Baccalauréat Série C — Cotonou, Bénin
+              </div>
+              <div class="timeline-desc">Fondation scientifique et mathématique — rigueur analytique, méthode et
+                persévérance.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DOUBLE EXPERTISE
+  ============================================================ -->
+  <section id="expertise" class="section">
+    <div class="container">
+      <p class="section-subtitle">Ce que je fais</p>
+      <h2 class="section-title fade-in">Ma <span class="accent">Double Expertise</span></h2>
+      <p class="section-subtitle fade-in">Deux angles complémentaires, un seul objectif : vous aider à prendre de
+        meilleures décisions.</p>
+
+      <div class="expertise-grid fade-in">
+
+        <div class="expertise-card blue">
+          <div class="expertise-icon-fa">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Data Analyst</h3>
+          <p>Je collecte, nettoie, analyse et visualise vos données pour en extraire des insights actionnables et
+            orienter vos décisions stratégiques.</p>
+          <ul class="expertise-list">
+            <li>Analyse exploratoire (EDA)</li>
+            <li>Tableaux de bord interactifs (Power BI)</li>
+            <li>Modélisation prédictive (ML)</li>
+            <li>Storytelling data-driven</li>
+            <li>Tests A/B & statistiques</li>
+          </ul>
+        </div>
+
+        <div class="expertise-card amber">
+          <div class="expertise-icon-fa">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>Consultant IA</h3>
+          <p>J'aide les particuliers et PME à identifier des opportunités d'automatisation grâce à l'IA pour gagner du
+            temps et réduire les coûts.</p>
+          <ul class="expertise-list">
+            <li>Audit & identification d'opportunités IA</li>
+            <li>Prototypage d'outils intelligents</li>
+            <li>Automatisation de tâches répétitives</li>
+            <li>Formation & accompagnement</li>
+            <li>Solutions adaptées aux PME africaines</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COMPÉTENCES
+  ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="section-subtitle">Stack technique</p>
+      <h2 class="section-title fade-in">Mes <span class="accent">Compétences</span></h2>
+      <p class="section-subtitle fade-in">Un stack ciblé et maîtrisé — la qualité plutôt que la quantité.</p>
+
+      <div class="skills-layout fade-in">
+        <div class="skills-bars">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">
+                <i class="fab fa-python skill-icon"></i> Python (Pandas, scikit-learn)
+              </span>
+              <span class="skill-level">Avancé</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">
+                <i class="fas fa-database skill-icon"></i> SQL
+              </span>
+              <span class="skill-level">Avancé</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">
+                <i class="fas fa-chart-pie skill-icon"></i> Power BI
+              </span>
+              <span class="skill-level">Intermédiaire</span>
+              <span class="skill-percent">68%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill amber-fill" data-width="68"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">
+                <i class="fas fa-table skill-icon"></i> Excel (Power Query, Pivot)
+              </span>
+              <span class="skill-level">Intermédiaire</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill amber-fill" data-width="70"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">
+                <i class="fas fa-chart-line skill-icon"></i> R & ggplot2
+              </span>
+              <span class="skill-level">Intermédiaire</span>
+              <span class="skill-percent">60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill amber-fill" data-width="60"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-right">
+          <div class="tools-title">Outils complémentaires</div>
+          <div class="tools-grid">
+            <span class="tool-badge">Flask</span>
+            <span class="tool-badge">Plotly Dash</span>
+            <span class="tool-badge">Chart.js</span>
+            <span class="tool-badge">SQLite</span>
+            <span class="tool-badge">Git / GitHub</span>
+            <span class="tool-badge">HTML/CSS/JS</span>
+            <span class="tool-badge">scikit-learn</span>
+            <span class="tool-badge">Pandas</span>
+            <span class="tool-badge">A/B Testing</span>
+          </div>
+
+          <div class="langs-grid" style="margin-top:2rem">
+            <div class="lang-card">
+              <div class="lang-flag-icon"><i class="fas fa-language"></i></div>
+              <div class="lang-name">Français</div>
+              <div class="lang-level">C2 — Natif</div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag-icon"><i class="fas fa-language"></i></div>
+              <div class="lang-name">Anglais</div>
+              <div class="lang-level">A2 — Notions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS
+  ============================================================ -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <p class="section-subtitle">Formation continue</p>
+      <h2 class="section-title fade-in">Formations & <span class="accent">Certifications</span></h2>
+
+      <div class="certs-grid fade-in">
+        <div class="cert-card">
+          <div class="cert-icon-fa blue"><i class="fas fa-medal"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Google Data Analytics Professional Certificate</div>
+            <div class="cert-source">Coursera · <a href="https://coursera.org/verify/professional-cert/GMU5T66K79SK"
+                target="_blank">Vérifier</a></div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon-fa blue"><i class="fas fa-chart-bar"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Réalisez des dashboards avec Power BI</div>
+            <div class="cert-source">OpenClassrooms</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon-fa amber"><i class="fas fa-table"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Excel Basics for Data Analysis</div>
+            <div class="cert-source">Coursera (IBM)</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon-fa amber"><i class="fas fa-file-excel"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Préparer des données pour l'analyse avec Microsoft Excel</div>
+            <div class="cert-source">Coursera</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon-fa blue"><i class="fas fa-tasks"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">Bases de la gestion de projet</div>
+            <div class="cert-source">Coursera (Google) · <a
+                href="https://www.coursera.org/account/accomplishments/certificate/DZXBBO87VF90"
+                target="_blank">Vérifier</a></div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon-fa amber"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-info">
+            <div class="cert-name">12 bonnes pratiques de cybersécurité (ANSSI)</div>
+            <div class="cert-source">OpenClassrooms · <a
+                href="https://openclassrooms.com/fr/course-certificates/6619141272" target="_blank">Vérifier</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RÉALISATIONS
+  ============================================================ -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <p class="section-subtitle">Highlights</p>
+      <h2 class="section-title fade-in">
+        <i class="fas fa-trophy" style="color:var(--accent-amber)"></i> Réalisations
+      </h2>
+
+      <ul class="achievements-list fade-in">
+        <li>
+          <i class="fas fa-certificate achieve-icon"></i>
+          <span><strong><a href="https://coursera.org/verify/professional-cert/GMU5T66K79SK" target="_blank" rel="noopener noreferrer">Certifié Google Data Analytics</a></strong> – Programme professionnel complet sur Coursera</span>
+        </li>
+        <li>
+          <i class="fas fa-microchip achieve-icon"></i>
+          <span>Projet de fin de licence <em>(en cours)</em> — <strong>Système intelligent de gestion de consommation énergétique</strong>, compteurs SBEE, Bénin.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJETS
+  ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-subtitle">Portfolio</p>
+      <h2 class="section-title fade-in">
+        <i class="fas fa-briefcase" style="color:var(--accent-blue)"></i> Études de Cas
+      </h2>
+
+      <div id="filter-controls" role="group" aria-label="Filtrer les projets">
+        <button data-filter="all" class="filter-btn active" aria-pressed="true">Tous</button>
+        <button data-filter="marketing" class="filter-btn" aria-pressed="false">Marketing</button>
+        <button data-filter="prediction" class="filter-btn" aria-pressed="false">Prédiction</button>
+        <button data-filter="bi" class="filter-btn" aria-pressed="false">BI / Tableau de bord</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- OptiBank -->
+        <div class="case-study fade-in" data-category="marketing bi prediction">
+          <div class="case-study-header blue"></div>
+          <div class="case-study-body">
+            <div class="case-study-meta">
+              <span class="meta-tag"><i class="fas fa-calendar-alt"></i> Fév–Mars 2025</span>
+              <span class="meta-tag">Marketing</span>
+              <span class="meta-tag">BI</span>
+              <span class="meta-tag">Prédiction</span>
+            </div>
+            <h3>OptiBank – Optimisation des campagnes marketing grâce à l'IA</h3>
+            <div class="case-study-org">
+              <i class="fas fa-university"></i> Associé à Institut CERCO International
+            </div>
+            <p><strong>Outils :</strong> Python, Pandas, scikit-learn, Plotly Dash, SQLite</p>
+            <p><strong>Compétences :</strong> Analyse des données, SQL, Machine Learning (Random Forest, Régression
+              Logistique), Test A/B, Tableau de bord</p>
+            <p>Dashboard intelligent simulant l'analyse de +41 000 enregistrements marketing bancaires. Tests A/B
+              (p-value = 0.0000), modèles prédictifs et segmentation pour optimiser le ROI des campagnes.</p>
+            <a href="https://drive.google.com/file/d/1CweRNg312QYpS55y1ElC-Qtnw-ob6Cmu/view?usp=vids_web" class="button"
+              target="_blank">
+              <i class="fas fa-play-circle"></i> Voir la vidéo
+            </a>
+          </div>
+        </div>
+
+        <!-- Akɔwɛdagbe -->
+        <div class="case-study fade-in" data-category="prediction bi">
+          <div class="case-study-header amber"></div>
+          <div class="case-study-body">
+            <div class="case-study-meta">
+              <span class="meta-tag"><i class="fas fa-calendar-alt"></i> Mai–Juin 2025</span>
+              <span class="meta-tag">Prédiction</span>
+              <span class="meta-tag">BI</span>
+            </div>
+            <h3>Akɔwɛdagbe – Plateforme d'Analyse des Dépenses Ménagères (Bénin)</h3>
+            <div class="case-study-org">
+              <i class="fas fa-university"></i> Associé à Institut CERCO International
+            </div>
+            <p><strong>Outils :</strong> Python, Flask, SQLite, HTML/CSS/JS, Chart.js, scikit-learn, Pandas</p>
+            <p><strong>Compétences :</strong> Développement Web Full-Stack, SGBD, UI/UX, Machine Learning (Régression
+              linéaire), Visualisation de données</p>
+            <p>Application web MVP permettant aux ménages béninois d'enregistrer leurs dépenses, visualiser leur budget
+              et prévoir leurs dépenses futures grâce à un modèle prédictif.</p>
+            <a href="https://docs.google.com/presentation/d/e/2PACX-1vQgn4Ns_dntNlBJ771-R21iWtU6UHVgJvvWXi3lLoRHSyoztzCmWmkfP-xh96l0DbTy7u93C8h6fhs_/pub?start=true&loop=false&delayms=60000"
+              class="button" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-desktop"></i> Voir la présentation
+            </a>
+            <a href="https://github.com/CedBag/Ak-w--agbe" target="_blank" rel="noopener noreferrer"
+              class="button btn-github-card">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Bellabeat -->
+        <div class="case-study fade-in" data-category="marketing">
+          <div class="case-study-header green"></div>
+          <div class="case-study-body">
+            <div class="case-study-meta">
+              <span class="meta-tag">Marketing</span>
+              <span class="meta-tag">EDA</span>
+            </div>
+            <h3>Bellabeat – Analyse d'utilisation des objets connectés</h3>
+            <p><strong>Outils :</strong> R, tidyverse, ggplot2</p>
+            <p><strong>Compétences :</strong> EDA, visualisation, storytelling, recommandations business</p>
+            <p>Étude des données Fitbit pour dégager des tendances comportementales et formuler des recommandations
+              marketing concrètes pour la montre Bellabeat Time.</p>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vTUTHFRbFEUQoJgBAT_AxTkglE2Ddd3IFt83-y2rGUnSGOMVHcftJpBUISSRNfcb9DHqlw9UY6wJYRq/pub"
+              class="button" target="_blank">
+              <i class="fas fa-file-alt"></i> Voir le rapport
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONSULTATION IA
+  ============================================================ -->
+  <section id="consultation-ia" class="section">
+    <div class="container">
+      <p class="section-subtitle">Conseil & Accompagnement</p>
+      <h2 class="section-title fade-in">
+        L'IA est-elle faite <span class="accent-amber">pour vous</span> ?
+      </h2>
+      <p class="section-subtitle fade-in" style="max-width:640px;">
+        L'IA n'aide pas tout le monde de la même façon. La première étape n'est pas une offre — c'est
+        une discussion claire pour comprendre votre besoin réel.
+      </p>
+
+      <div class="ia-profiles fade-in">
+
+        <!-- Profil 1 : Individuel -->
+        <div class="ia-profile-card personal">
+          <div class="ia-profile-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3><span class="accent">Individuel</span> &amp; Personnel</h3>
+          <p class="ia-profile-desc">Freelances, étudiants, créateurs, autodidactes</p>
+          <ul class="ia-profile-list">
+            <li><i class="fas fa-check"></i> Apprendre à utiliser l'IA intelligemment</li>
+            <li><i class="fas fa-check"></i> Développer une compétence (business, automatisation...)</li>
+            <li><i class="fas fa-check"></i> Maîtriser le prompt engineering, pas juste copier</li>
+            <li><i class="fas fa-check"></i> Devenir plus productif et crédible</li>
+          </ul>
+          <p class="ia-profile-goal">→ Objectif : autonomie, structure et confiance avec l'IA.</p>
+        </div>
+
+        <!-- Profil 2 : Entreprise -->
+        <div class="ia-profile-card business">
+          <div class="ia-profile-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3><span class="accent-amber">Entreprise</span> &amp; Professionnel</h3>
+          <p class="ia-profile-desc">PME, entrepreneurs, dirigeants, équipes</p>
+          <ul class="ia-profile-list">
+            <li><i class="fas fa-check"></i> Intégrer l'IA dans votre activité</li>
+            <li><i class="fas fa-check"></i> Automatiser sans faire d'erreurs</li>
+            <li><i class="fas fa-check"></i> Mettre en place des agents IA et process concrets</li>
+            <li><i class="fas fa-check"></i> Éviter les pertes de temps et d'argent liées à l'IA</li>
+          </ul>
+          <p class="ia-profile-goal">→ Objectif : structurer, sécuriser et rentabiliser l'IA.</p>
+        </div>
+
+      </div>
+
+      <!-- Citation + CTA -->
+      <div class="ia-cta-block fade-in">
+        <blockquote class="ia-quote">
+          &laquo;&nbsp;L'IA ne récompense pas ceux qui testent au hasard.
+          Elle amplifie ceux qui savent où ils vont.&nbsp;&raquo;
+          <cite>— cedbag, Shogun de l'IA</cite>
+        </blockquote>
+        <p class="ia-cta-desc">
+          Si vous vous reconnaissez dans l'un de ces profils, réservez une <strong>session de clarté
+          de 20 minutes</strong> (sans engagement) — un échange pour clarifier votre objectif et voir ce
+          qui est pertinent pour vous.
+        </p>
+        <div class="ia-cta-buttons">
+          <a href="https://calendly.com/bagbononcedoque/30min" target="_blank" rel="noopener noreferrer"
+            class="btn btn-amber">
+            <i class="fas fa-calendar-check"></i> Réserver ma session (20 min)
+          </a>
+          <a href="https://wa.me/2290152095535" target="_blank" rel="noopener noreferrer"
+            class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Discussion directe WhatsApp
+          </a>
+          <a href="https://studio-ia-co.mychariow.shop/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-shop">
+            <i class="fas fa-store"></i> Voir la boutique (formations &amp; outils)
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <p class="section-subtitle">Travaillons ensemble</p>
+      <h2 class="section-title fade-in">Prêt à <span class="accent">collaborer</span> ?</h2>
+
+      <div class="contact-grid fade-in">
+        <div class="contact-left">
+          <p class="contact-headline">Vous recrutez un Data Analyst motivé et orienté résultats ?</p>
+          <p class="contact-desc">
+            Je suis à la recherche d'un <strong>emploi ou d'un stage</strong> en tant que Data Analyst. Mon CV et mes
+            études de cas sont disponibles — n'hésitez pas à me contacter pour en discuter.
+          </p>
+          <div class="cv-buttons">
+            <a href="https://docs.google.com/document/d/e/2PACX-1vRQB-HM4CHfBiboe_6ecRo-tEDWdwUUhp1H0JRKesmXZ9wnPM6X5R8oStuaXG1EeA1qc5TAEKydtjlr/pub"
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i class="fas fa-eye"></i> Consulter mon CV
+            </a>
+            <a href="https://docs.google.com/document/d/1-T-NGNfwAi6pJ0_sTjPW43ZO-hfBB2mkMlZGKjsE24s/edit?usp=sharing"
+              target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fas fa-download"></i> Télécharger (PDF)
+            </a>
+          </div>
+          <span class="contact-location">
+            <i class="fas fa-map-marker-alt"></i>
+            Cotonou, Bénin — Open to Remote &amp; International
+          </span>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:bagbononcedoque@gmail.com" class="contact-link">
+            <span class="contact-link-icon"><i class="fas fa-envelope"></i></span>
+            <div class="contact-link-text">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">bagbononcedoque@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/cedbagke" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-link-icon"><i class="fab fa-linkedin-in"></i></span>
+            <div class="contact-link-text">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">linkedin.com/in/cedbagke</span>
+            </div>
+          </a>
+          <a href="https://github.com/CedBag" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-link-icon"><i class="fab fa-github"></i></span>
+            <div class="contact-link-text">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">github.com/CedBag</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <p>
+      &copy; 2026 <strong>Cedoque Bagbonon</strong> — Data Analyst & Consultant IA
+      &nbsp;&middot;&nbsp;
+      Built by <strong class="accent">cedbag</strong>
+    </p>
+  </footer>
+
+  <!-- Bouton Retour en haut -->
+  <button id="scroll-top" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
