@@ -132,6 +132,27 @@ img {
   color: var(--accent-amber);
 }
 
+/* Classes utilitaires (remplacent les anciens styles inline) */
+.icon-amber { color: var(--accent-amber); }
+.icon-blue  { color: var(--accent-blue); }
+
+.about-desc {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.langs-grid--spaced {
+  margin-top: 2rem;
+}
+
+.ia-subtitle {
+  max-width: 640px;
+}
+
+
 /* Fade-in au scroll */
 .fade-in {
   opacity: 0;
@@ -158,6 +179,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transition: background-color var(--transition);
 }
@@ -1003,7 +1025,6 @@ nav {
   margin-top: 2px;
 }
 
-.cert-info {}
 
 .cert-name {
   font-weight: 600;
@@ -1297,7 +1318,6 @@ nav {
   flex-shrink: 0;
 }
 
-.contact-link-text {}
 
 .contact-link-label {
   font-size: 0.75rem;
