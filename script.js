@@ -52,39 +52,41 @@ navLinks.querySelectorAll('a').forEach(link => {
    3. EFFET TYPEWRITER
 ============================================= */
 const typewriterEl = document.getElementById('typewriter-text');
-const words = ['Bagbonon', 'Data Analyst', 'Consultant IA', 'Builder'];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-let typewriterDelay = 120;
+if (typewriterEl) {
+  const words = ['Bagbonon', 'Data Analyst', 'Data Driven', 'Builder'];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typewriterDelay = 120;
 
-function typewriter() {
-  const currentWord = words[wordIndex];
+  function typewriter() {
+    const currentWord = words[wordIndex];
 
-  if (!isDeleting) {
-    typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
-    charIndex++;
-    if (charIndex === currentWord.length) {
-      isDeleting = true;
-      typewriterDelay = 2000; // Pause avant suppression
+    if (!isDeleting) {
+      typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === currentWord.length) {
+        isDeleting = true;
+        typewriterDelay = 2000; // Pause avant suppression
+      } else {
+        typewriterDelay = 120;
+      }
     } else {
-      typewriterDelay = 120;
+      typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typewriterDelay = 400;
+      } else {
+        typewriterDelay = 60;
+      }
     }
-  } else {
-    typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
-    charIndex--;
-    if (charIndex === 0) {
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
-      typewriterDelay = 400;
-    } else {
-      typewriterDelay = 60;
-    }
+    setTimeout(typewriter, typewriterDelay);
   }
-  setTimeout(typewriter, typewriterDelay);
-}
 
-setTimeout(typewriter, 600);
+  setTimeout(typewriter, 600);
+}
 
 /* =============================================
    4. SCROLL ANIMATIONS (Intersection Observer)
@@ -120,13 +122,14 @@ fadeEls.forEach((el) => {
    4b. BARRE DE PROGRESSION DE LECTURE (#12)
 ============================================= */
 const readingBar = document.getElementById('reading-progress');
-
-window.addEventListener('scroll', () => {
-  const scrollTop = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-  readingBar.style.width = `${Math.min(progress, 100)}%`;
-}, { passive: true });
+if (readingBar) {
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    readingBar.style.width = `${Math.min(progress, 100)}%`;
+  }, { passive: true });
+}
 
 /* =============================================
    5. BARRES DE COMPÉTENCES (animées au scroll)
@@ -206,15 +209,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    8. BOUTON RETOUR EN HAUT
 ============================================= */
 const scrollTopBtn = document.getElementById('scroll-top');
+if (scrollTopBtn) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.add('visible');
+    } else {
+      scrollTopBtn.classList.remove('visible');
+    }
+  }, { passive: true });
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    scrollTopBtn.classList.add('visible');
-  } else {
-    scrollTopBtn.classList.remove('visible');
-  }
-}, { passive: true });
-
-scrollTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}

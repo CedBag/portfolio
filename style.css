@@ -1822,4 +1822,188 @@ footer strong {
   box-shadow: 0 8px 25px rgba(124, 58, 237, 0.45);
   color: #fff;
 }
-
+
+/* ==============================================
+   NOUVEAUX STYLES (GLASSMORPHISM & PREMIUM UI)
+============================================== */
+.glass-nav {
+  background: rgba(var(--bg-primary-rgb), 0.7) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="light"] .glass-nav {
+  background: rgba(248, 249, 252, 0.7) !important;
+}
+
+[data-theme="dark"] .glass-nav {
+  background: rgba(15, 22, 36, 0.7) !important;
+}
+
+.glass-card {
+  background: var(--bg-card) !important;
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.05) !important;
+  border: 1px solid var(--border) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .glass-card {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+  background: rgba(30, 45, 74, 0.6) !important;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+  transform: skewX(-25deg);
+  transition: all 0.75s;
+  pointer-events: none;
+}
+
+.glass-card:hover::after {
+  left: 150%;
+}
+
+.hero-data, .hero-ia {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--accent-blue) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+[data-theme="dark"] .hero-background-pattern {
+  opacity: 0.1;
+}
+
+.relative-z {
+  position: relative;
+  z-index: 10;
+}
+
+.impact-box {
+  background: rgba(37, 99, 235, 0.05);
+  border-left: 3px solid var(--accent-blue);
+  padding: 1rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 1rem 0;
+}
+
+.impact-box.amber {
+  background: rgba(245, 158, 11, 0.05);
+  border-left-color: var(--accent-amber);
+}
+
+.impact-box.green {
+  background: rgba(16, 185, 129, 0.05);
+  border-left-color: #10B981;
+}
+
+.impact-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.impact-box p {
+  margin: 0 !important;
+  font-size: 0.9rem !important;
+  color: var(--text-secondary) !important;
+}
+
+.case-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.glass-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: skewX(-25deg);
+  transition: all 0.75s;
+}
+
+.glass-btn:hover::after {
+  left: 150%;
+}
+
+/* ==============================================
+   METRICS & FLAT BADGES (RECRUITER FEEDBACK)
+============================================== */
+.hero-metrics {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--accent-blue);
+  margin-bottom: 0.4rem;
+  letter-spacing: -1px;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skill-badge-flat {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+
+.skill-badge-flat:hover {
+  border-color: var(--accent-blue);
+  background: rgba(37, 99, 235, 0.05);
+  transform: translateY(-2px);
+}
