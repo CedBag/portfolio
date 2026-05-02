@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cedbag.github.io/portfolio/sitemap.xml
