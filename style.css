@@ -674,10 +674,10 @@ nav {
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.8fr;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   gap: 3rem;
-  align-items: start;
 }
 
 .about-sidebar {
@@ -1443,7 +1443,8 @@ footer strong {
   }
 
   .about-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
   }
 
   .expertise-grid {
@@ -2087,9 +2088,10 @@ footer strong {
 
 .about-content {
   text-align: center;
-  max-width: 800px;
+  max-width: 850px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 3rem;
   border-radius: var(--radius-lg);
 }
 
